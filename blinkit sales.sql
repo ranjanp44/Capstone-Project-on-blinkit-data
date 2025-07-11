@@ -107,7 +107,7 @@ FROM `blinkit grocery data`
 GROUP BY `Outlet Type`;
 
 
-SELECT `Outlet Identifier`, #averagesales per out
+SELECT `Outlet Identifier`, 
        ROUND(SUM(`Total Sales`), 2) AS Total_Sales,
        ROUND(AVG(`Total Sales`), 2) AS Avg_Sales_Per_Item,
        COUNT(*) AS No_of_Items
